@@ -9,7 +9,7 @@ const Login = () => {
 
 
     const handleChange = e => {
-        setLoginData({ ...formData, [e.target.name]: e.target.value });
+        setLoginData({ ...loginData, [e.target.name]: e.target.value });
       }
 
     const handleSubmit = (e) => {
