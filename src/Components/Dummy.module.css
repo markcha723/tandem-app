@@ -1,0 +1,10 @@
+@import url("../constants.css");
+
+.card {
+  height: 800px;
+  width: 400px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

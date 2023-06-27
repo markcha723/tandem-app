@@ -1,0 +1,23 @@
+@import url("../../constants.css");
+
+.button {
+  padding: 12px;
+}
+
+.small {
+  width: 200px;
+  height: 100px;
+}
+
+.large {
+  width: 300px;
+  height: 150px;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--accent-color);
+}
