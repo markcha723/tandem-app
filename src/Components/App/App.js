@@ -1,13 +1,15 @@
-import "./App.css";
+// import "./App.css";
 import React, { useState } from "react";
-import Dummy from "../Dummy";
+import Landing from "../Landing/Landing";
+import Login from "../Login/Login";
 
 const App = () => {
-  const [appState, setAppState] = useState("splash"); //'splash', 'login', 'dashboard'
+  const [appState, setAppState] = useState("landing"); //'splash', 'login', 'dashboard'
 
   return (
     <div className="App">
-      {appState === "splash" && <Dummy setAppState={setAppState} />}
+      {appState === "landing" && <Landing setAppState={setAppState} />}
+      {appState === "login" && <Login setAppState={setAppState} />}
     </div>
   );
 };
