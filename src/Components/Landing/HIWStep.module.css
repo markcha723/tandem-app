@@ -1,0 +1,27 @@
+@import url("../../constants.css");
+
+.step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  width: 1000px;
+}
+
+.step-card {
+  height: 500px;
+  width: 400px;
+  padding: var(--padding-large);
+  background-color: var(--accent-color);
+  border-radius: var(--rounded-xlarge);
+}
+
+.step-card h3 {
+  font-size: var(--text-h3);
+}
+
+.step-card p {
+  font-size: var(--text-xxlarge);
+  padding: var(--padding-base);
+}

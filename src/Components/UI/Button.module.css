@@ -1,18 +1,23 @@
 @import url("../../constants.css");
 
 .button {
-  padding: var(--padding-small);
-  border: 1px solid black;
+  border: none;
 }
 
 .small {
-  min-width: 96px;
-  height: 48px;
+  width: 124px;
+  height: 64px;
+  border-radius: var(--rounded-large);
+  font-size: var(--text-large);
+  padding: var(--padding-small) var(--padding-small);
 }
 
 .large {
   width: 192px;
   height: 96px;
+  border-radius: var(--rounded-xlarge);
+  font-size: var(--text-xxlarge);
+  padding: var(--padding-base) var(--padding-base);
 }
 
 .primary {
@@ -21,4 +26,8 @@
 
 .secondary {
   background-color: var(--accent-color);
+}
+
+.grey {
+  background-color: var(--grey-color);
 }

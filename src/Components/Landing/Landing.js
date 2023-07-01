@@ -10,7 +10,7 @@ const Landing = (props) => {
   return (
     <main className={classes["landing-page"]}>
       <Navigation setAppState={props.setAppState} />
-      <Header />
+      <Header setAppState={props.setAppState} />
       <HowItWorks />
       <CTA />
       <Footer />
