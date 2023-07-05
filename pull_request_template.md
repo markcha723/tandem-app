@@ -16,4 +16,4 @@
 [//]: <> (Which files were changed? What changes were made?)
 
 ### Relevant Tickets:
-[//]: <> (Finishes iteration or ticket for (type # to bring up a list of issues within the project)
+[//]: <> (Finishes iteration or ticket for type # to bring up a list of issues within the project)
