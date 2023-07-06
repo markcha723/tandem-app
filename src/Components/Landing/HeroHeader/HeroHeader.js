@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import Button from "../UI/Button";
-import classes from "./Header.module.css";
+import Button from '../../Button/Button';
+import classes from './HeroHeader.module.css';
 
-const Header = (props) => {
+const HeroHeader = (props) => {
   const getStartedHandler = () => {
-    props.setAppState("register");
+    props.setAppState('register');
   };
 
   const tutorialHandler = () => {
     document
-      .getElementById("howitworks")
-      .scrollIntoView({ behavior: "smooth" });
+      .getElementById('howitworks')
+      .scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -39,4 +39,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default HeroHeader;

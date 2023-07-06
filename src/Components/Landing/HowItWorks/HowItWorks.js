@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import HIWStep from "./HIWStep";
-import Circle from "../Graphics/Circle";
-import classes from "./HowItWorks.module.css";
+import HIWStep from '../HIWStep/HIWStep';
+import Circle from '../../Graphics/Circle';
+import classes from './HowItWorks.module.css';
 
 const HowItWorks = () => {
   return (
-    <section className={classes["how-it-works"]} id="howitworks">
-      <div className={classes["section-title"]}>
+    <section className={classes['how-it-works']} id="howitworks">
+      <div className={classes['section-title']}>
         <h2>how it works</h2>
         <Circle />
       </div>

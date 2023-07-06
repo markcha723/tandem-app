@@ -1,18 +1,18 @@
-import React from "react";
-import Logo from "../UI/Logo";
-import Button from "../UI/Button";
+import React from 'react';
+import Logo from '../UI/Logo/Logo';
+import Button from '../Button/Button';
 
-import classes from "./Navigation.module.css";
+import classes from './Navigation.module.css';
 
 const Navigation = (props) => {
   const loginButtonClickHandler = () => {
-    props.setAppState("login");
+    props.setAppState('login');
   };
 
   return (
     <nav className={classes.navigation}>
       <Logo />
-      <div className={classes["nav-options"]}>
+      <div className={classes['nav-options']}>
         <Button
           color="secondary"
           size="small"
