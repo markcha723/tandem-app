@@ -1,0 +1,33 @@
+@import url("../../constants.css");
+
+.button {
+  border: none;
+}
+
+.small {
+  width: 124px;
+  height: 64px;
+  border-radius: var(--rounded-large);
+  font-size: var(--text-large);
+  padding: var(--padding-small) var(--padding-small);
+}
+
+.large {
+  width: 192px;
+  height: 96px;
+  border-radius: var(--rounded-xlarge);
+  font-size: var(--text-xxlarge);
+  padding: var(--padding-base) var(--padding-base);
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--accent-color);
+}
+
+.grey {
+  background-color: var(--grey-color);
+}
