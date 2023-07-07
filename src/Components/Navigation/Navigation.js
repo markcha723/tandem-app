@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../UI/Logo/Logo';
+import Logo from '../SharedUIComponents/Logo/Logo';
 import Button from '../Button/Button';
 
 import classes from './Navigation.module.css';
