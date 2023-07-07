@@ -4,7 +4,7 @@ import Landing from "../Landing/Landing";
 import Login from "../Login/Login";
 
 const App = () => {
-  const [appState, setAppState] = useState("login"); //'splash', 'register', 'login', 'dashboard'
+  const [appState, setAppState] = useState("landing"); //'splash', 'register', 'login', 'dashboard'
 
   return (
     <div className="App">

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 import Button from '../Button/Button';
-import classes from 'Form.module.css';
+import classes from './Form.module.css';
 import UserInputField from '../SharedUIComponents/UserInputField/UserInputField';
-import { placeholder } from '@babel/types';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -21,17 +20,13 @@ const Form = () => {
     },
     password: {
       inputName: 'password',
-      placeholder: 'enter your password',
+      placeholder: 'new password',
       value: '',
       type: 'password',
     },
   });
 
-  // const handleInputChange = () => {
-  //     setFormData({ ...formData, [e.target.name]: e.target.value });
-  // }
-
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     clearInputs();
@@ -42,12 +37,11 @@ const Form = () => {
   };
 
   return (
-    // how to use userInputField component instead here? is it neccessary?
     <form>
-      <UserInputField inputData={formData.email} />
-      <UserInputField inputData={formData.username} />
-      <UserInputField inputData={formData.password} />
-      <Button />
+      <UserInputField inputData={formData.email} setFormData={setFormData} formData={formData} />
+      <UserInputField inputData={formData.username} setFormData={setFormData} formData={formData} />
+      <UserInputField inputData={formData.password} setFormData={setFormData} formData={formData} />
+      <Button color='primary' size='small' onClick={handleSubmit}>Submit</Button>
     </form>
   );
 };

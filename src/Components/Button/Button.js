@@ -8,9 +8,9 @@ const Button = ({ color, size, onClick }) => {
       className={`${classes.button} ${classes[color]} ${
         size === "small" ? classes.small : classes.large
       }`}
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.children}
+      {/* {props.children} */}
     </button>
   );
   // onClick - dynamic? diff context for each button

@@ -5,6 +5,7 @@ import HeroHeader from './HeroHeader/HeroHeader';
 import HowItWorks from './HowItWorks/HowItWorks';
 import CTA from './CTA/CTA';
 import Footer from './Footer/Footer';
+import Form from '../Form/Form';
 
 const Landing = (props) => {
   return (
@@ -13,6 +14,7 @@ const Landing = (props) => {
       <HeroHeader setAppState={props.setAppState} />
       <HowItWorks />
       <CTA />
+      <Form />
       <Footer />
     </main>
   );
